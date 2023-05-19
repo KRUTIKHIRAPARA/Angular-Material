@@ -8,6 +8,50 @@
     align-items: flex-start;
   }
   
-  .demo-section + .demo-section {
-    margin-top: 16px;
+.demo-section + .demo-section {
+  margin-top: 16px;
+}
+
+
+// Change badge background color
+.mat-badge-content{
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  // transform: scale(0.8);
+}
+
+
+// Small badge font size
+::ng-deep .mat-badge-small .mat-badge-content{
+  font-size: 14px; 
+  background-color: red;
+  padding: 3px;
+}
+
+::ng-deep .mat-badge-accent .mat-badge-content{
+  background-color: black;
+  color: white;
+}
+
+.mat-badge-content{
+  transform: scale(0.7);
+  animation: anm 0.5s ease-in-out infinite alternate;
+}
+
+::ng-deep .hide .mat-badge-content{
+  transform: scale(0.7);
+  animation: anm 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes anm {
+  0%{
+    transform: scale(1.0);
   }
+  100%{
+    transform: scale(1.5);
+  }
+  0%{
+    transform: scale(1.0);
+  }
+}

@@ -7,6 +7,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatRippleModule} from '@angular/material/core';
 import {MatBadgeModule} from '@angular/material/badge';
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import {MatListModule} from '@angular/material/list';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import {MatBadgeModule} from '@angular/material/badge';
     MatButtonModule,
     MatCardModule,
     MatRippleModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatBottomSheetModule,
+    MatListModule
   ],
   exports: [
     CommonModule,
@@ -27,7 +31,9 @@ import {MatBadgeModule} from '@angular/material/badge';
     MatButtonModule,
     MatCardModule,
     MatRippleModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatBottomSheetModule,
+    MatListModule
   ]
 })
 export class MatModuleModule { }

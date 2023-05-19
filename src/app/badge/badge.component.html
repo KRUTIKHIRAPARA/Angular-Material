@@ -21,9 +21,9 @@
 
 
 <!-- Click Button Badge Toggle -->
-<div class="demo-section">
+<div class="demo-section">  
     Button toggles badge visibility
-    <button mat-raised-button matBadge="7" [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()">
+    <button mat-raised-button matBadge="7" [matBadgeHidden]="hidden"(click)="toggleBadgeVisibility()" class="hide">
         Hide
     </button>
 </div>
@@ -61,4 +61,20 @@
 <button mat-raised-button color="primary"
     matBadge="8" matBadgePosition="after" matBadgeColor="accent">
   Action
-</button><br>
+</button><br><br>
+
+<button matBadgeSize="small" mat-raised-button color="primary"
+    matBadge="8" matBadgePosition="after" matBadgeColor="accent">
+  Action
+</button><br><br>
+
+
+<!-- Custome Badge -->
+
+
+<!-- Small Badge background & color change -->
+    <!-- small, medium and large -->
+
+    <div matBadge="1" matBadgeSize="small"  matBadgeOverlap="false" class="demo-section">Text with small badge</div><br>
+    <div matBadge="1" matBadgeSize="medium"  matBadgeOverlap="false" class="demo-section">Text with medium badge</div><br>
+    <div matBadge="1" matBadgeSize="large"  matBadgeOverlap="false" class="demo-section">Text with large badge</div><br>
