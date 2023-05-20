@@ -1,0 +1,69 @@
+<br><br>
+
+
+<!-- Simple button toggle -->
+<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle value="bold">Bold</mat-button-toggle>
+    <mat-button-toggle value="italic">Italic</mat-button-toggle>
+    <mat-button-toggle value="underline">Underline</mat-button-toggle>
+</mat-button-toggle-group>
+<br><br>
+
+<!-- Single Selection -->
+<h3>Single selection</h3>
+<mat-button-toggle-group #group="matButtonToggleGroup" name="favoriteColor" aria-label="Favorite Color">
+  <mat-button-toggle value="red">Red</mat-button-toggle>
+  <mat-button-toggle value="green">Green</mat-button-toggle>
+  <mat-button-toggle value="blue">Blue</mat-button-toggle>
+</mat-button-toggle-group>
+Color Is : {{ group.value }}
+<br><br>
+
+<!-- Multiple Selection -->
+<h3>Multiple selection</h3>
+<mat-button-toggle-group name="ingredients" #group2="matButtonToggleGroup" aria-label="Ingredients" multiple>
+  <mat-button-toggle value="flour">Flour</mat-button-toggle>
+  <mat-button-toggle value="eggs">Eggs</mat-button-toggle>
+  <mat-button-toggle value="sugar">Sugar</mat-button-toggle>
+</mat-button-toggle-group>
+Seleted Is : {{ group2.value }}
+<br><br>
+
+<!-- Appearance -->
+<p>
+    Default appearance:
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+      <mat-button-toggle value="bold">Bold</mat-button-toggle>
+      <mat-button-toggle value="italic">Italic</mat-button-toggle>
+      <mat-button-toggle value="underline">Underline</mat-button-toggle>
+    </mat-button-toggle-group>
+</p>
+  
+<p>
+    Legacy appearance:
+    <mat-button-toggle-group appearance="legacy" name="fontStyle" aria-label="Font Style">
+      <mat-button-toggle value="bold">Bold</mat-button-toggle>
+      <mat-button-toggle value="italic">Italic</mat-button-toggle>
+      <mat-button-toggle value="underline">Underline</mat-button-toggle>
+    </mat-button-toggle-group>
+</p>
+
+
+<!-- Icon Example -->
+<mat-button-toggle-group #group3 = "matButtonToggleGroup">
+    <mat-button-toggle value = "left">
+       <mat-icon>format_align_left</mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle value = "center">
+       <mat-icon>format_align_center</mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle value = "right">
+       <mat-icon>format_align_right</mat-icon>
+    </mat-button-toggle>
+    <mat-button-toggle value = "justify" >
+       <mat-icon>format_align_justify</mat-icon>
+    </mat-button-toggle>
+</mat-button-toggle-group>
+<div class = "tp-selected-value">Selected value: {{group3.value}}</div>
+
+<p [style.text-align]="group3.value" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi corporis cumque quibusdam cum in fuga nam eos facilis incidunt odio? Nobis voluptate nisi tempore doloribus iste? Enim ipsam deleniti iusto quam quisquam eum, laboriosam molestiae amet optio temporibus obcaecati doloremque voluptates culpa? Explicabo maiores ducimus harum consequatur nemo obcaecati, consectetur placeat modi quo, sed animi eaque reprehenderit, optio rem. Ad quod illo sequi dignissimos animi aut ipsam odio ea aliquid, architecto harum quaerat quo, adipisci consequatur laboriosam ex consectetur voluptatum. Cupiditate laboriosam expedita quas autem vel culpa omnis laudantium eveniet doloribus non temporibus consequatur, id, animi dolor praesentium earum nesciunt dolores ex aperiam quibusdam modi est! Cupiditate exercitationem quibusdam, accusamus autem mollitia ullam incidunt quasi tenetur, minima, quae eveniet distinctio.</p>

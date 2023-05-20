@@ -9,14 +9,10 @@ import { BottomSheetOtherFIleComponent } from '../bottom-sheet-other-file/bottom
 })
 export class BottomSheetComponent {
 
-  @Input() sheet: BottomSheetOtherFIleComponent | undefined;
-
   constructor(private _bottomSheet: MatBottomSheet) {}
 
   openBottomSheet(): void {
     this._bottomSheet.open(BottomSheetOtherFIleComponent);
-    
-
   }
 }
 
